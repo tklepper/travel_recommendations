@@ -1,0 +1,217 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height:100%;
+    background:linear-gradient(0deg, rgba(38, 0, 255, 0.467), rgba(17, 2, 102, 0.5)), url(./travel_background.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+nav {
+    background-color: #020475;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+nav > h1 {
+    color:white;
+}
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  #searchInput {
+    background: #dfe8f1;
+    border: 0;
+    border-radius: 20px;
+    color: black;
+    padding: 10px 182px 10px 15px;
+    width: 100%;
+  }
+  
+  #searchInput:focus {
+    outline: none;
+  }
+  
+  #searchInput::placeholder {
+    color: black;
+  }
+  
+  #btnSearch {
+    background: #1645bd;
+    border: 0;
+    border-radius: 0px 0 0 0px;
+    color: white;
+    padding: 10px 10px;
+    position: absolute;
+    right: 50px;
+}
+#btnReset {
+    background: #6e6f71;
+    border: 0;
+    border-radius: 0 20px 20px 0;
+    color: white;
+    padding: 10px 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+  
+ #searchWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+
+.container {
+    display:flex;    
+}
+
+.container > div {
+    position:fixed;
+}
+
+.container > div > h1 {
+    margin: 200px 200px 0 200px;
+    color: white;
+    font-size: 50px;
+    font-family: arial;
+    text-transform: uppercase;
+    width: 30px;
+  }
+
+.container > h1.about {
+    width: unset;
+    margin: 32px 200px;
+  }
+.container > div > div > p,
+.container > div > p {
+    width: 450px;
+    color: white;
+    font-size: 20px;
+    margin: 40px 200px;
+}
+
+.contact {
+    display:flex;
+}
+
+.contact-form {
+    left: 40%;
+    width: 400px;
+}
+.contact-form > form {
+    display:flex;
+    flex-direction: column;
+    margin: 200px 0;
+}
+.contact-form > form > textarea,
+.contact-form > form > input {
+    background-color: rgba(17, 2, 102, 0.5);
+    border: solid 1px white;
+    border-radius: 5px;
+    padding:5px;
+    color:white;
+    margin:5px;
+}
+
+#submit {
+    background: #1645bd;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+}
+.our-team {
+    display:flex;
+}
+.our-team >h2 {
+    color: white;
+    font-size: 30px;
+    width: 10px;
+    margin: 40px 200px;
+}
+
+.social {
+    display: flex;
+    margin:10px;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-around;
+}
+
+.members {
+    display:flex;
+}
+.member-wrapper {
+    margin: 50px;
+  color: white;
+  
+}
+.member-name {
+    font-size: 24px;
+}
+.member-title {
+    font-size: 18px;
+}
+
+.location-wrapper {
+    width:500px;
+}
+
+.location-image {
+    margin-bottom: -5px;
+}
+.location-image > img {
+    width:500px;
+}
+
+.location-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.location-info {
+    background-color: rgba(255,255,255,0.5);
+    padding:20px;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 20px;
+}
+
+.location-button {
+    background: #1645bd;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+}
+
+#searchResults {
+    position: absolute;
+    left: 50%;
+    top: 150px;
+}
